@@ -24,15 +24,11 @@ const Dashboard = () => {
                      bg-clip-text text-transparent drop-shadow-md">
         Container Shop Dashboard
       </h1>
-
-      {/* Shop Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
         {shops.map((shop) => (
           <ShopCard key={shop.id} shop={shop} />
         ))}
       </div>
-
-      {/* Editable Shops Table */}
       <div className="bg-white shadow-lg rounded-xl p-6">
         <h2 className="text-2xl font-bold mb-4">Edit Shops</h2>
         <table className="w-full text-left border-collapse">
@@ -76,6 +72,7 @@ const Dashboard = () => {
                       handleEdit(shop.id, "tenant", e.target.value)
                     }
                     className="border px-2 py-1 rounded w-full"
+                    placeholder="Leave empty if vacant"
                   />
                 </td>
               </tr>

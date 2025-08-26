@@ -4,14 +4,11 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <nav className="bg-green-900 p-4 flex justify-between items-center shadow-lg">
-      {/* Gradient title */}
       <h1 className="text-2xl sm:text-3xl font-extrabold 
                      bg-gradient-to-r from-green-400 to-green-400 
                      bg-clip-text text-transparent drop-shadow-lg">
         Container Rental
       </h1>
-
-      {/* Navigation links */}
       <div className="flex space-x-6">
         <Link
           to="/"
